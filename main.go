@@ -16,9 +16,9 @@ func main() {
 	for {
 		level := gpio.GpioGetLevel(btnIO)
 		if level == 1 {
-			c.Printf(c.Str("咱听到了... 1 (是高电平哦，猫咪在高处！)\n"))
+			c.Printf(c.Str("No Press!\n"))
 		} else {
-			c.Printf(c.Str("咱听到了... 0 (是低电平哦，猫咪趴在地板上！)\n"))
+			c.Printf(c.Str("Preesed\n"))
 		}
 		time.VTaskDelay()
 	}
