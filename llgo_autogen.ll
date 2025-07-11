@@ -1,19 +1,19 @@
-; ModuleID = 'llgo-esp32'
-source_filename = "llgo-esp32"
+; ModuleID = 'command-line-arguments'
+source_filename = "command-line-arguments"
 
-@"llgo-esp32.init$guard" = global i1 false, align 1
+@"command-line-arguments.init$guard" = global i1 false, align 1
 @0 = private unnamed_addr constant [18 x i8] c"hello llgo-esp32\0A\00", align 1
-@1 = private unnamed_addr constant [58 x i8] c"\E5\92\B1\E5\90\AC\E5\88\B0\E4\BA\86... 1 (\E6\98\AF\E9\AB\98\E7\94\B5\E5\B9\B3\E5\93\A6\EF\BC\8C\E7\8C\AB\E5\92\AA\E5\9C\A8\E9\AB\98\E5\A4\84\EF\BC\81)\0A\00", align 1
-@2 = private unnamed_addr constant [64 x i8] c"\E5\92\B1\E5\90\AC\E5\88\B0\E4\BA\86... 0 (\E6\98\AF\E4\BD\8E\E7\94\B5\E5\B9\B3\E5\93\A6\EF\BC\8C\E7\8C\AB\E5\92\AA\E8\B6\B4\E5\9C\A8\E5\9C\B0\E6\9D\BF\E4\B8\8A\EF\BC\81)\0A\00", align 1
+@1 = private unnamed_addr constant [11 x i8] c"No Press!\0A\00", align 1
+@2 = private unnamed_addr constant [9 x i8] c"Preesed\0A\00", align 1
 
-define void @llgo-esp32.init() {
+define void @command-line-arguments.init() {
 _llgo_0:
-  %0 = load i1, ptr @"llgo-esp32.init$guard", align 1
+  %0 = load i1, ptr @"command-line-arguments.init$guard", align 1
   br i1 %0, label %_llgo_2, label %_llgo_1
 
 _llgo_1:                                          ; preds = %_llgo_0
-  store i1 true, ptr @"llgo-esp32.init$guard", align 1
-  ; call void @freertos.init()
+  store i1 true, ptr @"command-line-arguments.init$guard", align 1
+  call void @freertos.init()
   br label %_llgo_2
 
 _llgo_2:                                          ; preds = %_llgo_1, %_llgo_0
@@ -44,7 +44,7 @@ _llgo_4:                                          ; preds = %_llgo_1
   br label %_llgo_3
 }
 
-; declare void @freertos.init()
+declare void @freertos.init()
 
 declare i32 @gpio_set_direction(i32, i32)
 
