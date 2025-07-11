@@ -13,7 +13,6 @@ _llgo_0:
 
 _llgo_1:                                          ; preds = %_llgo_0
   store i1 true, ptr @"command-line-arguments.init$guard", align 1
-  call void @freertos.init()
   br label %_llgo_2
 
 _llgo_2:                                          ; preds = %_llgo_1, %_llgo_0
@@ -44,7 +43,6 @@ _llgo_4:                                          ; preds = %_llgo_1
   br label %_llgo_3
 }
 
-declare void @freertos.init()
 
 declare i32 @gpio_set_direction(i32, i32)
 
