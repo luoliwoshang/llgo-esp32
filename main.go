@@ -7,8 +7,8 @@ import (
 	"github.com/goplus/lib/c"
 )
 
-//export main
-func main() {
+//export app_main
+func app_main() {
 	time := os.TickTypeT(c.Uint32T(10))
 	btnIO := gpio.GpioNumT(gpio.GPIO_NUM_34)
 	gpio.GpioSetDirection(btnIO, gpio.GPIO_MODE_INPUT)
@@ -23,3 +23,5 @@ func main() {
 		time.VTaskDelay()
 	}
 }
+
+var _ = app_main
