@@ -17,12 +17,13 @@ func app_main() {
 	for {
 		level := gpio.GpioGetLevel(btnIO)
 		if level == 1 {
-			c.Printf(c.Str("No Press!\n"))
+			c.Printf(c.Str("No Press!!!!!!!\n"))
 		} else {
-			c.Printf(c.Str("Preesed\n"))
+			c.Printf(c.Str("Pressed!!!!!!!\n"))
 		}
 		time.VTaskDelay()
 	}
+
 }
 
 func main() {}
