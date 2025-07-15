@@ -43,3 +43,14 @@ Preesed
 Preesed
 No Press!
 ```
+
+
+
+
+----
+
+### NOTE
+esp-idf 环境下会默认使用乐鑫预构建的 esp-clang ，会缺少后端内容，需要另外
+```bash
+export PATH="/Users/zhangzhiyang/Documents/Code/temp/tinygo/llvm-build/bin:$PATH"
+```

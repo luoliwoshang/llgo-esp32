@@ -1,8 +1,9 @@
 package main
 
 import (
-	gpio "esp_driver_gpio"
-	os "freertos"
+	gpio "github.com/MeteorsLiu/esp32/esp32/esp_driver_gpio"
+
+	os "github.com/MeteorsLiu/esp32/esp32/freertos"
 
 	"github.com/goplus/lib/c"
 )
@@ -24,4 +25,4 @@ func app_main() {
 	}
 }
 
-var _ = app_main
+func main() {}
