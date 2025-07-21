@@ -1,0 +1,8 @@
+github.com/MeteorsLiu/esp32/esp32/esp_driver_gpio v0.0.0-20250715113342-c75d21889cd1 h1:m2oMIN0hvVVh9iYI1tdFDYkbghNEDRKJSI4KB69c4jo=
+github.com/MeteorsLiu/esp32/esp32/esp_driver_gpio v0.0.0-20250715113342-c75d21889cd1/go.mod h1:JCbknYt2/wZiD4o5cEDYhdnwdFOtA6otO/jtiLQdH5U=
+github.com/MeteorsLiu/esp32/esp32/freertos v0.0.0-20250715113342-c75d21889cd1 h1:LUEP1BwBdWMEaYC5z+Eb+Snd9I8HbFLcK1NSx6Siaek=
+github.com/MeteorsLiu/esp32/esp32/freertos v0.0.0-20250715113342-c75d21889cd1/go.mod h1:5Ob47vqb584vkvIXIux64GYi4riNpPAsG5Qd32hLdOg=
+github.com/MeteorsLiu/esp32/esp32/log v0.0.0-20250715113342-c75d21889cd1 h1:mzFgaqyGh2d2+YTF4qTiBsrz3mF80auZmc9Paove7Ro=
+github.com/MeteorsLiu/esp32/esp32/log v0.0.0-20250715113342-c75d21889cd1/go.mod h1:RBD0pvYQ7ErR5vMe/gmDWZ9Wr0E+In9Y5kiCFFExubw=
+github.com/goplus/lib v0.2.0 h1:AjqkN1XK5H23wZMMlpaUYAMCDAdSBQ2NMFrLtSh7W4g=
+github.com/goplus/lib v0.2.0/go.mod h1:SgJv3oPqLLHCu0gcL46ejOP3x7/2ry2Jtxu7ta32kp0=
