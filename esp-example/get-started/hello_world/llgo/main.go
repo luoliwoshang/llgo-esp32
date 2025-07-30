@@ -8,12 +8,13 @@ import (
 	"github.com/goplus/lib/c"
 )
 
-func main() {
+//export app_main
+func app_main() {
 	tag := c.Str("llgo-esp32")
 	time := os.TickTypeT(c.Uint32T(10))
 	btnIO := gpio.GpioNumT(gpio.GPIO_NUM_34)
 	gpio.GpioSetDirection(btnIO, gpio.GPIO_MODE_INPUT)
-	log.EspLogWrite(log.ESP_LOG_INFO, tag, c.Str("hello llgo-------esp32!!!!!\n"))
+	log.EspLogWrite(log.ESP_LOG_INFO, tag, c.Str("hello llgo-esp32!!!!!\n"))
 	for {
 		level := gpio.GpioGetLevel(btnIO)
 		if level == 1 {
@@ -25,3 +26,5 @@ func main() {
 	}
 
 }
+
+func main() {}
