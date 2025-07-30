@@ -17,9 +17,9 @@ func main() {
 	for {
 		level := gpio.GpioGetLevel(btnIO)
 		if level == 1 {
-			log.EspLogWrite(log.ESP_LOG_INFO, tag, c.Str("没按下去!\n"))
+			log.EspLogWrite(log.ESP_LOG_INFO, tag, c.Str("没按下去!!!!\n"))
 		} else {
-			log.EspLogWrite(log.ESP_LOG_INFO, tag, c.Str("按下去了!\n"))
+			log.EspLogWrite(log.ESP_LOG_INFO, tag, c.Str("按下去了!!!!\n"))
 		}
 		time.VTaskDelay()
 	}
