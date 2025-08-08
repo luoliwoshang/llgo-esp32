@@ -5,9 +5,9 @@ package machine
 import (
 	"errors"
 
-	" github.com/luoliwoshang/llgo-esp32/emb/device/esp"
+	"github.com/luoliwoshang/llgo-esp32/emb/device/esp"
 
-	"  github.com/luoliwoshang/llgo-esp32/emb/runtime/volatile"
+	"github.com/luoliwoshang/llgo-esp32/emb/runtime/volatile"
 
 	"unsafe"
 )
