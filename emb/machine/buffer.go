@@ -1,7 +1,7 @@
 package machine
 
 import (
-	"github.com/goplus/llgo/emb/runtime/volatile"
+	" github.com/luoliwoshang/llgo-esp32/emb/runtime/volatile"
 )
 
 // RingBuffer is ring buffer implementation inspired by post at
